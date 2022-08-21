@@ -18,4 +18,4 @@ def easyCrypto(text):
 text = input()
 easyCrypto(text)
 
-Made by:  LeprechaunC 
+#Made by:  LeprechaunC 
