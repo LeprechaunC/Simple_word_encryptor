@@ -1,0 +1,19 @@
+"""
+an encryptor. every character at an odd position i in the alphabet will be encrypted with char at pos i +1,
+and every character at even pos i will be encrypted with pos i -1. in other words, 'a' is encrypted with b, 'b' with 'a'
+
+"""
+
+def easyCrypto(text):
+    word = ""
+    for letter in text:
+        word = ord(letter)
+        if word % 2 == 0:
+            encrypt_word = word - 1
+            print(chr(encrypt_word), end='')
+        else:
+            encrypt_word = word + 1
+            print(chr(encrypt_word), end='')
+
+text = input()
+easyCrypto(text)
